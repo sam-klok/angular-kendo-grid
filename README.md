@@ -1,27 +1,33 @@
-# AngularKendoGrid
+Playing with angular and kendo grid export to Excle. Let's do it static.
+Thank you,
+Serge Klokov
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+Based on examples:
+1. Angular Excel Export Overview
+https://www.telerik.com/kendo-angular-ui/components/excel-export/
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Major steps explaining how I created this project:
 
-## Code scaffolding
+1. Create project:
+>ng new angular-kendo-grid
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Add kendo grid to project:
+>ng add @progress/kendo-angular-grid
 
-## Build
+3. Add process package:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { process } from '@progress/kendo-data-query';
 
-## Running unit tests
+because it's already installed (see failed attempt to install below )
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ng add @progress/kendo-data-query
+Skipping installation: Package already installed
+The package that you are trying to add does not support schematics. You can try using a different version of the package or contact the package author to add ng-add support.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Add kendo Excel export component
+> ng add @progress/kendo-angular-excel-export 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+and add ExcelModule to import in modules.ts:
+import { GridModule, ExcelModule } from '@progress/kendo-angular-grid';
