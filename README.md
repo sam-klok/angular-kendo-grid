@@ -1,7 +1,5 @@
-Playing with angular and kendo grid export to Excle. 
-Let's convert from static to reactive.
-Old, static app: https://github.com/sam-klok/angular-kendo-grid
-This would be new, reactive app. 
+Playing with angular and kendo grid export to Excel. 
+Let's keep it static for now.
 
 Thank you,
 Serge Klokov
