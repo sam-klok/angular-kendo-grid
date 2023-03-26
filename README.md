@@ -7,7 +7,7 @@ Serge Klokov
 Based on examples:
 1. Angular Excel Export Overview
 https://www.telerik.com/kendo-angular-ui/components/excel-export/
-
+https://stackblitz.com/edit/angular-ddwvng 
 
 Major steps explaining how I created this project:
 
